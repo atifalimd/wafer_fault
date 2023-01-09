@@ -33,11 +33,7 @@ class RawDataValidation:
             LengthOfTimeStampInFile = dic['LengthOfTimeStampInFile']
             no_of_col = dic['NumberofColumns']
             column_names = dic['ColName']
-            
-            file = open("Training_Logs/valuesfromSchemaValidationLog.txt",'a+')
-            message = ("LengthOfDateStampInFile: {}" +"\t LengthOfTimeStampInFile: {}" +"\t" + "NumberofColumns:{}").format(LengthOfDateStampInFile, LengthOfTimeStampInFile, no_of_col)
-            self.logger.log(file,message)
-            file.close()   
+               
         except:
             pass
         
